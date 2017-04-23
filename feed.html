@@ -49,14 +49,14 @@
   <div class="ui three column stackable grid container" id="context">
     <div class="column">
       <div class="ui fluid card">
-        <div class="image">
+        <a class="image post-detail">
           <img src="assets/images/post/1.jpg">
-        </div>
+        </a>
         <div class="content">
           <a href="profile.html">
             <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
           </a>
-          <a class="right floated meta" href="post-detail.html">
+          <a class="right floated meta post-detail">
             5<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
@@ -72,14 +72,14 @@
         </div>
       </div>
       <div class="ui fluid card">
-        <div class="image">
+        <a class="image post-detail">
           <img src="assets/images/post/2.jpg">
-        </div>
+        </a>
         <div class="content">
           <a href="profile.html">
             <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
           </a>
-          <a class="right floated meta" href="post-detail.html">
+          <a class="right floated meta post-detail">
             5<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
@@ -97,14 +97,14 @@
     </div>
     <div class="column">
       <div class="ui fluid card">
-        <div class="content gradient" id="gradient-1">
+        <a class="content gradient post-detail" id="gradient-1">
           <h1 class="center aligned">Ketidakpedulian merupakan salah satu cikal bakal korupsi.</h1>
-        </div>
+        </a>
         <div class="content">
           <a href="profile.html">
             <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
           </a>
-          <a class="right floated meta" href="post-detail.html">
+          <a class="right floated meta post-detail">
             5<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
@@ -117,14 +117,14 @@
         </div>
       </div>
       <div class="ui fluid card">
-        <div class="image">
+        <a class="image post-detail">
           <img src="assets/images/post/3.jpg">
-        </div>
+        </a>
         <div class="content">
           <a href="profile.html">
             <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
           </a>
-          <a class="right floated meta" href="post-detail.html">
+          <a class="right floated meta post-detail">
             5<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
@@ -140,14 +140,14 @@
         </div>
       </div>
       <div class="ui fluid card">
-        <div class="image">
+        <a class="image post-detail">
           <img src="assets/images/post/4.jpg">
-        </div>
+        </a>
         <div class="content">
           <a href="profile.html">
             <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
           </a>
-          <a class="right floated meta" href="post-detail.html">
+          <a class="right floated meta post-detail">
             5<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
@@ -165,14 +165,14 @@
     </div>
     <div class="column">
       <div class="ui fluid card">
-        <div class="image">
+        <a class="image post-detail">
           <img src="assets/images/post/5.jpg">
-        </div>
+        </a>
         <div class="content">
           <a href="profile.html">
             <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
           </a>
-          <a class="right floated meta" href="post-detail.html">
+          <a class="right floated meta post-detail">
             5<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
@@ -188,14 +188,14 @@
         </div>
       </div>
       <div class="ui fluid card">
-        <div class="image">
+        <a class="image post-detail">
           <img src="assets/images/post/6.jpg">
-        </div>
+        </a>
         <div class="content">
           <a href="profile.html">
             <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
           </a>
-          <a class="right floated meta" href="post-detail.html">
+          <a class="right floated meta post-detail">
             5<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
@@ -213,6 +213,141 @@
     </div>
   </div>
   <!-- /Content -->
+
+  <!-- Post Detail Modal -->
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="content">
+      <div class="ui internally celled grid">
+        <div class="ten wide column">
+          <div class="ui two column grid">
+            <div class="row">
+              <div class="column">
+                <div class="ui labeled button" tabindex="0">
+                  <div class="ui red button">
+                    <i class="heart icon"></i> Like
+                  </div>
+                  <a class="ui basic red left pointing label">23</a>
+                </div>
+              </div>
+              <div class="right aligned column">
+                <button class="ui circular facebook icon button">
+                  <i class="facebook icon"></i>
+                </button>
+                <button class="ui circular twitter icon button">
+                  <i class="twitter icon"></i>
+                </button>
+                <button class="ui circular google plus icon button">
+                  <i class="google plus icon"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img class="ui image" src="assets/images/post/1.jpg">
+            </div>
+            <a class="item row" href="profile.html">
+              <img class="ui avatar image" src="assets/images/profile/1.jpg">
+              <div class="content">
+                <div class="ui header">Matt Giampietro</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Comments -->
+        <div class="six wide column">
+          <div class="ui minimal comments">
+            <h3 class="ui dividing header">Comments</h3>
+            <div class="comment">
+              <a class="avatar">
+                <img src="assets/images/profile/1.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Matt</a>
+                <div class="metadata">
+                  <span class="date">Today at 5:42PM</span>
+                </div>
+                <div class="text">
+                  How artistic!
+                </div>
+                <div class="actions">
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="assets/images/profile/2.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Elliot Fu</a>
+                <div class="metadata">
+                  <span class="date">Yesterday at 12:30AM</span>
+                </div>
+                <div class="text">
+                  <p>This has been very useful for my research. Thanks as well!</p>
+                </div>
+                <div class="actions">
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+              <div class="comments">
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="assets/images/profile/1.jpg">
+                  </a>
+                  <div class="content">
+                    <a class="author">Jenny Hess</a>
+                    <div class="metadata">
+                      <span class="date">Just now</span>
+                    </div>
+                    <div class="text">
+                      Elliot you are always so right :)
+                    </div>
+                    <div class="actions">
+                      <a class="reply">Reply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="assets/images/profile/3.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Joe Henderson</a>
+                <div class="metadata">
+                  <span class="date">5 days ago</span>
+                </div>
+                <div class="text">
+                  Dude, this is awesome. Thanks so much
+                </div>
+                <div class="actions">
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="assets/images/profile/1.jpg">
+              </a>
+              <div class="content">
+                <a class="author">Matt</a>
+                <div class="text">
+                  <div class="ui fluid transparent input">
+                    <input type="text" placeholder="Add Comment...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Comments -->
+      </div>
+    </div>
+  </div>
+  <!-- /Post Detail Modal -->
 
   <!-- Script -->
   <script
