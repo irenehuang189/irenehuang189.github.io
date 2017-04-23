@@ -1,0 +1,11 @@
+# Semantic UI
+node_modules
+lib/semantic/dist/*
+lib/semantic/gulpfile.js
+lib/semantic/src/definitions
+lib/semantic/src/semantic.less
+lib/semantic/src/theme.less
+lib/semantic/src/themes
+lib/semantic/tasks
+!lib/semantic/dist/semantic.min.css
+!lib/semantic/dist/semantic.min.js
