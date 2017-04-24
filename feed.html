@@ -14,6 +14,7 @@
 
   <!-- Style -->
   <link rel="stylesheet" type="text/css" href="lib/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/style/dropzone.css">
   <link rel="stylesheet" type="text/css" href="assets/style/app.css">
 </head>
 <body>
@@ -34,12 +35,39 @@
           </div>
         </div>
       </div>
+      <a class="right item" id="new-post">
+        <i class="icons">
+          <i class="photo icon"></i>
+          <i class="corner add icon"></i>
+        </i>
+      </a>
+
+      <!-- Create New Post -->
+      <div class="ui popup bottom left transition hidden" id="new-post">
+        <div class="ui form">
+          <div class="field">
+            <label>Media</label>
+            <label for="file" class="ui icon primary fluid basic button">
+              <i class="image icon"></i> Select Media
+            </label>
+            <input type="file" accept="image/*|video/*" id="file" style="display:none">
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="field">
+            <label>Caption</label>
+            <textarea rows="2"></textarea>
+          </div>
+          <button class="ui right floated teal small button">Post</button>
+        </div>
+      </div>
+      <!-- /Create New Post -->
+
       <a class="right item" id="notification">
         <i class="bell icon"></i>
       </a>
 
       <!-- Notification -->
-      <div class="ui popup bottom left transition hidden">
+      <div class="ui popup bottom left transition hidden" id="notification">
         <div class="ui small feed">
           <div class="event">
             <div class="label">
@@ -289,7 +317,7 @@
   <!-- /Content -->
 
   <!-- Post Detail Modal -->
-  <div class="ui modal">
+  <div class="ui modal" id="post-detail">
     <i class="close icon"></i>
     <div class="content">
       <div class="ui internally celled stackable grid">
@@ -429,6 +457,7 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="lib/semantic/dist/semantic.min.js"></script>
+  <script src="assets/script/dropzone.js"></script>
   <script src="assets/script/app.js"></script>
 </body>
 </html>

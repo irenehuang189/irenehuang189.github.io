@@ -2,15 +2,26 @@ $(document).ready(function(){
   $('.ui.dropdown').dropdown();
 
   $('.post-detail').click(function(){
-    $('.ui.modal').modal('show');
+    $('.modal#post-detail').modal('show');
+  });
+
+  $('a#new-post').popup({
+    selector  : {
+      popup: '.popup#new-post'
+    },
+    on: 'click',
+    position: 'bottom right',
   });
 
   $('.menu #notification').popup({
+    selector: {
+      popup: '.popup#notification'
+    },
     on: 'click',
     lastResort: 'bottom right',
     onShow: function(){
-            resizePopup();
-        },
+      resizePopup();
+    },
   });
 
   // Function for resizing popup
