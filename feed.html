@@ -23,6 +23,7 @@
       <a class="item" href="feed.html">
         <img src="assets/images/logo.png">
       </a>
+      <a class="item">Discover</a>
       <a class="item">Trending</a>
       <a class="item">New</a>
       <div class="right menu" style="width: 100%;">
@@ -33,7 +34,80 @@
           </div>
         </div>
       </div>
-      <div class="ui floating dropdown right item">
+      <a class="right item" id="notification">
+        <i class="bell icon"></i>
+      </a>
+
+      <!-- Notification -->
+      <div class="ui popup bottom left transition hidden">
+        <div class="ui small feed">
+          <div class="event">
+            <div class="label">
+              <img src="assets/images/profile/1.jpg">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a class="user" href="profile.html">
+                  Elliot Fu
+                </a> started following you
+                <div class="date">
+                  1 hour ago
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="label">
+              <img src="assets/images/profile/2.jpg">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a class="user" href="profile.html">Helen Troy</a> commented: Bagus banget mas
+                <div class="date">
+                  4 days ago
+                </div>
+              </div>
+              <div class="extra images">
+                <a class="post-detail"><img src="assets/images/post/1.jpg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="label">
+              <img src="assets/images/profile/3.jpg">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a class="user" href="profile.html">
+                  Jenny Hess
+                </a> started following you
+                <div class="date">
+                  2 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="label">
+              <img src="assets/images/profile/3.jpg">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a class="user" href="profile.html">Justen Kitsune</a> loved your post
+                <div class="date">
+                  4 days ago
+                </div>
+              </div>
+              <div class="extra images">
+                <a class="post-detail"><img src="assets/images/post/1.jpg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Notification -->
+
+      <div class="ui floating dropdown right item" id="user">
         <i class="user icon"></i>
         <i class="dropdown icon"></i>
         <div class="menu">
@@ -218,14 +292,14 @@
   <div class="ui modal">
     <i class="close icon"></i>
     <div class="content">
-      <div class="ui internally celled grid">
+      <div class="ui internally celled stackable grid">
         <div class="ten wide column">
           <div class="ui two column grid">
             <div class="row">
               <div class="column">
                 <div class="ui labeled button" tabindex="0">
                   <div class="ui red button">
-                    <i class="heart icon"></i> Like
+                    <i class="heart icon"></i>Like
                   </div>
                   <a class="ui basic red left pointing label">23</a>
                 </div>
@@ -243,7 +317,7 @@
               </div>
             </div>
             <div>
-              <img class="ui image" src="assets/images/post/1.jpg">
+              <img class="ui rounded image" src="assets/images/post/1.jpg">
             </div>
             <a class="item row" href="profile.html">
               <img class="ui avatar image" src="assets/images/profile/1.jpg">
@@ -259,11 +333,11 @@
           <div class="ui minimal comments">
             <h3 class="ui dividing header">Comments</h3>
             <div class="comment">
-              <a class="avatar">
+              <a class="avatar" href="profile.html">
                 <img src="assets/images/profile/1.jpg">
               </a>
               <div class="content">
-                <a class="author">Matt</a>
+                <a class="author" href="profile.html">Matt</a>
                 <div class="metadata">
                   <span class="date">Today at 5:42PM</span>
                 </div>
@@ -276,11 +350,11 @@
               </div>
             </div>
             <div class="comment">
-              <a class="avatar">
+              <a class="avatar" href="profile.html">
                 <img src="assets/images/profile/2.jpg">
               </a>
               <div class="content">
-                <a class="author">Elliot Fu</a>
+                <a class="author" href="profile.html">Elliot Fu</a>
                 <div class="metadata">
                   <span class="date">Yesterday at 12:30AM</span>
                 </div>
@@ -293,11 +367,11 @@
               </div>
               <div class="comments">
                 <div class="comment">
-                  <a class="avatar">
+                  <a class="avatar" href="profile.html">
                     <img src="assets/images/profile/1.jpg">
                   </a>
                   <div class="content">
-                    <a class="author">Jenny Hess</a>
+                    <a class="author" href="profile.html">Jenny Hess</a>
                     <div class="metadata">
                       <span class="date">Just now</span>
                     </div>
@@ -312,11 +386,11 @@
               </div>
             </div>
             <div class="comment">
-              <a class="avatar">
+              <a class="avatar" href="profile.html">
                 <img src="assets/images/profile/3.jpg">
               </a>
               <div class="content">
-                <a class="author">Joe Henderson</a>
+                <a class="author" href="profile.html">Handira Sulistyo</a>
                 <div class="metadata">
                   <span class="date">5 days ago</span>
                 </div>
@@ -329,11 +403,11 @@
               </div>
             </div>
             <div class="comment">
-              <a class="avatar">
+              <a class="avatar" href="profile.html">
                 <img src="assets/images/profile/1.jpg">
               </a>
               <div class="content">
-                <a class="author">Matt</a>
+                <a class="author" href="profile.html">Matt</a>
                 <div class="text">
                   <div class="ui fluid transparent input">
                     <input type="text" placeholder="Add Comment...">

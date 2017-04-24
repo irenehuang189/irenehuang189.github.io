@@ -23,6 +23,7 @@
       <a class="item" href="feed.html">
         <img src="assets/images/logo.png">
       </a>
+      <a class="item">Discover</a>
       <a class="item">Trending</a>
       <a class="item">New</a>
       <div class="right menu" style="width: 100%;">
@@ -33,7 +34,80 @@
           </div>
         </div>
       </div>
-      <div class="ui floating dropdown right item">
+      <a class="right item" id="notification">
+        <i class="bell icon"></i>
+      </a>
+
+      <!-- Notification -->
+      <div class="ui popup bottom left transition hidden">
+        <div class="ui small feed">
+          <div class="event">
+            <div class="label">
+              <img src="assets/images/profile/1.jpg">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a class="user" href="profile.html">
+                  Elliot Fu
+                </a> started following you
+                <div class="date">
+                  1 hour ago
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="label">
+              <img src="assets/images/profile/2.jpg">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a class="user" href="profile.html">Helen Troy</a> commented: Bagus banget mas
+                <div class="date">
+                  4 days ago
+                </div>
+              </div>
+              <div class="extra images">
+                <a class="post-detail"><img src="assets/images/post/1.jpg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="label">
+              <img src="assets/images/profile/3.jpg">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a class="user" href="profile.html">
+                  Jenny Hess
+                </a> started following you
+                <div class="date">
+                  2 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="label">
+              <img src="assets/images/profile/3.jpg">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a class="user" href="profile.html">Justen Kitsune</a> loved your post
+                <div class="date">
+                  4 days ago
+                </div>
+              </div>
+              <div class="extra images">
+                <a class="post-detail"><img src="assets/images/post/1.jpg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Notification -->
+
+      <div class="ui floating dropdown right item" id="user">
         <i class="user icon"></i>
         <i class="dropdown icon"></i>
         <div class="menu">
