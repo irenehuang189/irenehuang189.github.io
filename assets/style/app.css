@@ -2,10 +2,6 @@ body {
   background: #f3f3f3;
 }
 
-input#grey {
-  background: #f3f3f3;
-}
-
 .ui.popup{
   overflow: auto;
 }
