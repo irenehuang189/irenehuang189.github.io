@@ -10,19 +10,18 @@
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-  <title>Home</title>
+  <title>NOCO</title>
 
   <!-- Style -->
   <link rel="stylesheet" type="text/css" href="lib/semantic/dist/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/style/dropzone.css">
   <link rel="stylesheet" type="text/css" href="assets/style/app.css">
 </head>
 <body>
   <!-- Menu -->
-  <div class="ui large stackable borderless fixed menu">
+  <div class="ui large stackable borderless fixed inverted menu">
     <div class="ui container">
-      <a class="item" href="feed.html">
-        <img src="assets/images/logo.png">
+      <a class="header item" href="feed.html">
+        <img src="assets/images/logo.png">&nbsp;NOCO
       </a>
       <a class="item">Discover</a>
       <a class="item">Trending</a>
@@ -30,7 +29,7 @@
       <div class="right menu" style="width: 100%;">
         <div class="item" style="width: 100%;">
           <div class="ui icon small input">
-            <input type="text" placeholder="Search...">
+            <input type="text" placeholder="Search..." id="grey">
             <i class="search link icon"></i>
           </div>
         </div>
@@ -57,7 +56,7 @@
             <label>Caption</label>
             <textarea rows="2"></textarea>
           </div>
-          <button class="ui right floated teal small button">Post</button>
+          <button class="ui right floated blue small button">Post</button>
         </div>
       </div>
       <!-- /Create New Post -->
@@ -71,12 +70,12 @@
         <div class="ui small feed">
           <div class="event">
             <div class="label">
-              <img src="assets/images/profile/1.jpg">
+              <img src="assets/images/profile/4.jpg">
             </div>
             <div class="content">
               <div class="summary">
                 <a class="user" href="profile.html">
-                  Elliot Fu
+                  Eddy Sastrawijaya
                 </a> started following you
                 <div class="date">
                   1 hour ago
@@ -90,44 +89,44 @@
             </div>
             <div class="content">
               <div class="summary">
-                <a class="user" href="profile.html">Helen Troy</a> commented: Bagus banget mas
+                <a class="user" href="profile.html">Venny Winardy</a> commented: Setuju banget sama idenya
                 <div class="date">
                   4 days ago
                 </div>
               </div>
               <div class="extra images">
-                <a class="post-detail"><img src="assets/images/post/1.jpg"></a>
+                <a class="post-detail"><img src="assets/images/post/13.jpg"></a>
               </div>
             </div>
           </div>
           <div class="event">
             <div class="label">
-              <img src="assets/images/profile/3.jpg">
+              <img src="assets/images/profile/2.jpg">
             </div>
             <div class="content">
               <div class="summary">
                 <a class="user" href="profile.html">
-                  Jenny Hess
+                  Venny Winardy
                 </a> started following you
                 <div class="date">
-                  2 days ago
+                  4 days ago
                 </div>
               </div>
             </div>
           </div>
           <div class="event">
             <div class="label">
-              <img src="assets/images/profile/3.jpg">
+              <img src="assets/images/profile/5.jpg">
             </div>
             <div class="content">
               <div class="summary">
-                <a class="user" href="profile.html">Justen Kitsune</a> loved your post
+                <a class="user" href="profile.html">Julius Napitupulu</a> loved your post
                 <div class="date">
                   4 days ago
                 </div>
               </div>
               <div class="extra images">
-                <a class="post-detail"><img src="assets/images/post/1.jpg"></a>
+                <a class="post-detail"><img src="assets/images/post/10.jpg"></a>
               </div>
             </div>
           </div>
@@ -149,6 +148,7 @@
 
   <!-- Content -->
   <div class="ui three column stackable grid container" id="context">
+    <!-- First Column -->
     <div class="column">
       <div class="ui fluid card">
         <a class="image post-detail">
@@ -156,14 +156,14 @@
         </a>
         <div class="content">
           <a href="profile.html">
-            <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
+            <img class="ui avatar image" src="assets/images/profile/4.jpg"> <b>Eddy Sastrawijaya</b>
           </a>
           <a class="right floated meta post-detail">
-            5<i class="heart outline icon"></i>
-            3<i class="comment outline icon"></i>
+            82<i class="heart outline icon"></i>
+            5<i class="comment outline icon"></i>
           </a>
           <div class="description">
-            Korupsi harus dilawan demi hak KITA bersama.
+            Tap Koruptor mengusung slogan “Game Anti Korupsi No.1 Terbaik di Indonesia” dan berhasil di-featured oleh Google Play Store di bagian Game Baru+Diperbarui hanya selang beberapa jam setelah perilisannya. 
           </div>
         </div>
         <div class="extra content">
@@ -179,14 +179,57 @@
         </a>
         <div class="content">
           <a href="profile.html">
-            <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
+            <img class="ui avatar image" src="assets/images/profile/2.jpg"> <b>Venny Winardy</b>
           </a>
           <a class="right floated meta post-detail">
-            5<i class="heart outline icon"></i>
+            38<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
           <div class="description">
-            Korupsi harus dilawan demi hak KITA bersama.
+            Bukan sulap bukan sihir antara koruptor dan vonis hukuman.
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui transparent fluid input">
+            <i class="heart like icon"></i>
+            <input type="text" placeholder="Add Comment...">
+          </div>
+        </div>
+      </div>
+      <div class="ui fluid card">
+        <a class="content gradient post-detail" id="gradient-2">
+          <h1 class="center aligned">Sesuai dengan UNCAC, definisi korupsi tidak saja mencakup korupsi di sektor publik, namun juga di sektor swasta maupun lembaga asing yang beroperasi di suatu negara.</h1>
+        </a>
+        <div class="content">
+          <a href="profile.html">
+            <img class="ui avatar image" src="assets/images/profile/3.jpg"> <b>Dian Sastro Wardoyo</b>
+          </a>
+          <a class="right floated meta post-detail">
+            38<i class="heart outline icon"></i>
+            3<i class="comment outline icon"></i>
+          </a>
+        </div>
+        <div class="extra content">
+          <div class="ui transparent fluid input">
+            <i class="heart like icon"></i>
+            <input type="text" placeholder="Add Comment...">
+          </div>
+        </div>
+      </div>
+      <div class="ui fluid card">
+        <a class="image post-detail">
+          <img src="assets/images/post/8.jpg">
+        </a>
+        <div class="content">
+          <a href="profile.html">
+            <img class="ui avatar image" src="assets/images/profile/5.jpg"> <b>Julius Napitupulu</b>
+          </a>
+          <a class="right floated meta post-detail">
+            287<i class="heart outline icon"></i>
+            90<i class="comment outline icon"></i>
+          </a>
+          <div class="description">
+            Selamat hari anti korupsi sedunia!
           </div>
         </div>
         <div class="extra content">
@@ -197,18 +240,20 @@
         </div>
       </div>
     </div>
+    <!-- /First Column -->
+    <!-- Second Column -->
     <div class="column">
       <div class="ui fluid card">
         <a class="content gradient post-detail" id="gradient-1">
-          <h1 class="center aligned">Ketidakpedulian merupakan salah satu cikal bakal korupsi.</h1>
+          <h1 class="center aligned">Korupsi merupakan perbuatan dosa.</h1>
         </a>
         <div class="content">
           <a href="profile.html">
-            <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
+            <img class="ui avatar image" src="assets/images/profile/3.jpg"> <b>Dian Sastro Wardoyo</b>
           </a>
           <a class="right floated meta post-detail">
-            5<i class="heart outline icon"></i>
-            3<i class="comment outline icon"></i>
+            102<i class="heart outline icon"></i>
+            10<i class="comment outline icon"></i>
           </a>
         </div>
         <div class="extra content">
@@ -224,14 +269,14 @@
         </a>
         <div class="content">
           <a href="profile.html">
-            <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
+            <img class="ui avatar image" src="assets/images/profile/4.jpg"> <b>Eddy Sastrawijaya</b>
           </a>
           <a class="right floated meta post-detail">
-            5<i class="heart outline icon"></i>
-            3<i class="comment outline icon"></i>
+            30<i class="heart outline icon"></i>
+            4<i class="comment outline icon"></i>
           </a>
           <div class="description">
-            Korupsi harus dilawan demi hak KITA bersama.
+            Sindiran yang tepat untuk para koruptor otsus.
           </div>
         </div>
         <div class="extra content">
@@ -247,14 +292,38 @@
         </a>
         <div class="content">
           <a href="profile.html">
-            <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
+            <img class="ui avatar image" src="assets/images/profile/3.jpg"> <b>Dian Sastro Wardoyo</b>
           </a>
           <a class="right floated meta post-detail">
             5<i class="heart outline icon"></i>
             3<i class="comment outline icon"></i>
           </a>
           <div class="description">
-            Korupsi harus dilawan demi hak KITA bersama.
+            Hukuman yang setimpal harus diberikan untuk para koruptor. Kalau hukuman tidak memberikan efek jera, miskinkan saja! #antikorupsi
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui transparent fluid input">
+            <i class="heart like icon"></i>
+            <input type="text" placeholder="Add Comment...">
+          </div>
+        </div>
+      </div>
+      <div class="ui fluid card">
+        <a class="image post-detail">
+          <img src="assets/images/post/9.jpg">
+        </a>
+        <div class="content">
+          <a href="profile.html">
+            <img class="ui avatar image" src="assets/images/profile/2.jpg"> <b>Venny Winardy</b>
+          </a>
+          <a class="right floated meta post-detail">
+            92<i class="heart outline icon"></i>
+            4<i class="comment outline icon"></i>
+          </a>
+          <div class="description">
+            Korupsi itu bom waktu yang bisa meledak sewaktu-waktu. Hati-hati!<br>
+            Selamat hari anti korupsi sedunia!
           </div>
         </div>
         <div class="extra content">
@@ -265,6 +334,8 @@
         </div>
       </div>
     </div>
+    <!-- /Second Column -->
+    <!-- Third Column -->
     <div class="column">
       <div class="ui fluid card">
         <a class="image post-detail">
@@ -272,15 +343,36 @@
         </a>
         <div class="content">
           <a href="profile.html">
-            <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
+            <img class="ui avatar image" src="assets/images/profile/2.jpg"> <b>Venny Winardy</b>
           </a>
           <a class="right floated meta post-detail">
-            5<i class="heart outline icon"></i>
-            3<i class="comment outline icon"></i>
+            35<i class="heart outline icon"></i>
+            9<i class="comment outline icon"></i>
           </a>
           <div class="description">
-            Korupsi harus dilawan demi hak KITA bersama.
+            Acara anti korupsi oleh KPK kemarin. Bu Sulis memperlihatkan karya-karya anak bangsa dalam memerangi korupsi.
           </div>
+        </div>
+        <div class="extra content">
+          <div class="ui transparent fluid input">
+            <i class="heart like icon"></i>
+            <input type="text" placeholder="Add Comment...">
+          </div>
+        </div>
+      </div>
+      <div class="column">
+      <div class="ui fluid card">
+        <a class="content gradient post-detail" id="gradient-4">
+          <h1 class="center aligned">Semakin tinggi tingkat korupsi suatu negara, semakin tinggi jurang kesenjangan pendapatan antara rumah tangga miskin dan menengah ke atas.</h1>
+        </a>
+        <div class="content">
+          <a href="profile.html">
+            <img class="ui avatar image" src="assets/images/profile/5.jpg"> <b>Julius Napitupulu</b>
+          </a>
+          <a class="right floated meta post-detail">
+            71<i class="heart outline icon"></i>
+            15<i class="comment outline icon"></i>
+          </a>
         </div>
         <div class="extra content">
           <div class="ui transparent fluid input">
@@ -295,14 +387,38 @@
         </a>
         <div class="content">
           <a href="profile.html">
-            <img class="ui avatar image" src="assets/images/profile/1.jpg"> <b>Matt Giampietro</b>
+            <img class="ui avatar image" src="assets/images/profile/3.jpg"> <b>Dian Sastro Wardoyo</b>
           </a>
           <a class="right floated meta post-detail">
-            5<i class="heart outline icon"></i>
-            3<i class="comment outline icon"></i>
+            46<i class="heart outline icon"></i>
+            9<i class="comment outline icon"></i>
           </a>
           <div class="description">
-            Korupsi harus dilawan demi hak KITA bersama.
+            Saya, perempuan anti korupsi. Kaos edisi baru dari Glex Studio dalam rangka memerangi korupsi.<br>
+            Pembelian silahkan hubungi 08726172662 (Dian)
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui transparent fluid input">
+            <i class="heart like icon"></i>
+            <input type="text" placeholder="Add Comment...">
+          </div>
+        </div>
+      </div>
+      <div class="ui fluid card">
+        <a class="image post-detail">
+          <img src="assets/images/post/7.jpg">
+        </a>
+        <div class="content">
+          <a href="profile.html">
+            <img class="ui avatar image" src="assets/images/profile/2.jpg"> <b>Venny Winardy</b>
+          </a>
+          <a class="right floated meta post-detail">
+            139<i class="heart outline icon"></i>
+            62<i class="comment outline icon"></i>
+          </a>
+          <div class="description">
+            Karya baru minggu ini. Kesempatan yang berharga untuk berkontribusi membuat mural anti korupsi di kampung mural, apalagi melihat anak-anak dapat memetik pelajaran moral dari sini.
           </div>
         </div>
         <div class="extra content">
@@ -313,6 +429,7 @@
         </div>
       </div>
     </div>
+    <!-- /Third Column -->
   </div>
   <!-- /Content -->
 
@@ -329,7 +446,7 @@
                   <div class="ui red button">
                     <i class="heart icon"></i>Like
                   </div>
-                  <a class="ui basic red left pointing label">23</a>
+                  <a class="ui basic red left pointing label">82</a>
                 </div>
               </div>
               <div class="right aligned column">
@@ -348,9 +465,9 @@
               <img class="ui rounded image" src="assets/images/post/1.jpg">
             </div>
             <a class="item row" href="profile.html">
-              <img class="ui avatar image" src="assets/images/profile/1.jpg">
+              <img class="ui avatar image" src="assets/images/profile/4.jpg">
               <div class="content">
-                <div class="ui header">Matt Giampietro</div>
+                <div class="ui header">Eddy Sastrawijaya</div>
               </div>
             </a>
           </div>
@@ -365,12 +482,12 @@
                 <img src="assets/images/profile/1.jpg">
               </a>
               <div class="content">
-                <a class="author" href="profile.html">Matt</a>
+                <a class="author" href="profile.html">Darmawan Setiadji</a>
                 <div class="metadata">
                   <span class="date">Today at 5:42PM</span>
                 </div>
                 <div class="text">
-                  How artistic!
+                  Semangat terus! Sangat menginspirasi gamenya
                 </div>
                 <div class="actions">
                   <a class="reply">Reply</a>
@@ -382,12 +499,12 @@
                 <img src="assets/images/profile/2.jpg">
               </a>
               <div class="content">
-                <a class="author" href="profile.html">Elliot Fu</a>
+                <a class="author" href="profile.html">Venny Winardy</a>
                 <div class="metadata">
                   <span class="date">Yesterday at 12:30AM</span>
                 </div>
                 <div class="text">
-                  <p>This has been very useful for my research. Thanks as well!</p>
+                  <p>Wah gamenya bisa didownload nih?</p>
                 </div>
                 <div class="actions">
                   <a class="reply">Reply</a>
@@ -399,12 +516,12 @@
                     <img src="assets/images/profile/1.jpg">
                   </a>
                   <div class="content">
-                    <a class="author" href="profile.html">Jenny Hess</a>
+                    <a class="author" href="profile.html">Darmawan Setiadji</a>
                     <div class="metadata">
                       <span class="date">Just now</span>
                     </div>
                     <div class="text">
-                      Elliot you are always so right :)
+                      Sudah kok, sudah release di Play Store dan App Store. Dicoba ya :)
                     </div>
                     <div class="actions">
                       <a class="reply">Reply</a>
@@ -418,12 +535,12 @@
                 <img src="assets/images/profile/3.jpg">
               </a>
               <div class="content">
-                <a class="author" href="profile.html">Handira Sulistyo</a>
+                <a class="author" href="profile.html">Dian Sastro Wardoyo</a>
                 <div class="metadata">
                   <span class="date">5 days ago</span>
                 </div>
                 <div class="text">
-                  Dude, this is awesome. Thanks so much
+                  Wah keren banget. Mungkin lain kali kita bisa kolaborasi nih!
                 </div>
                 <div class="actions">
                   <a class="reply">Reply</a>
@@ -435,7 +552,7 @@
                 <img src="assets/images/profile/1.jpg">
               </a>
               <div class="content">
-                <a class="author" href="profile.html">Matt</a>
+                <a class="author" href="profile.html">Darmawan Setiadji</a>
                 <div class="text">
                   <div class="ui fluid transparent input">
                     <input type="text" placeholder="Add Comment...">
@@ -457,7 +574,6 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="lib/semantic/dist/semantic.min.js"></script>
-  <script src="assets/script/dropzone.js"></script>
   <script src="assets/script/app.js"></script>
 </body>
 </html>
